@@ -1,0 +1,10 @@
+[H[2J[3J
+ ■■▶ data folder content : visible(6) hidden(1) total(7) 
+
+data.htx
+file_check
+file_check_binary.txt
+file_check.c
+src
+test
+
