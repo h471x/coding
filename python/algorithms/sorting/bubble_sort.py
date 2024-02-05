@@ -1,3 +1,11 @@
+"""
+Bubble Sort is a simple sorting algorithm that
+repeatedly steps through the array, element by element,
+comparing the current element with the one after it,
+swapping their values if the former is larger than tha latter.
+
+"""
+
 def bubble_sort(arr):
   n = len(arr)
   for i in range(n-1):
