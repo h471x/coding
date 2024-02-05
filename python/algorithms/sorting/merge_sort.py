@@ -52,7 +52,7 @@ def print_list(arr, tag):
 
 """
 Here I will give some unsorted list
-and then print it before and after insertionSort
+and then print it before and after merge_sort
 
 """
 
