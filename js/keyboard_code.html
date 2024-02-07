@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Codes</title>
+  <style>
+    body{ background: #000000;}
+    *{ margin: 0; padding: 0;
+      box-sizing: border-box; }
+    div{ color: white; margin: 0;
+      padding: 0; display: flex;
+      align-items: center;
+      justify-content: center; }
+    .key{ padding-top: 30vh;
+      font-size: 60px; }
+    .code{ padding-top: 4vh;
+      font-size: 50px; }
+  </style>
+</head>
+<body>
+  <div class="key"><h1>Key Pressed</h1></div>
+  <div class="code"><h1>Code</h1></div>
+  <script>
+    let key = document.querySelector(".key");
+    let code = document.querySelector(".code");
+
+    document.addEventListener('keydown', event => {
+      let key_code = event.keyCode;
+      let character = event.key;
+      let letter = character.toUpperCase();
+
+      const isSpace = key_code === 32;
+      const isLetter = /[a-zA-Z]/.test(character);
+
+      let key_pressed = (isSpace) ? "Space" : (isLetter) ? letter : character;
+
+      key.innerHTML = "<h1>" + key_pressed + "</h1><br><br>";
+      code.innerHTML = "<h1>" + key_code + "</h1>";
+    });
+  </script>
+</body>
+</html>
